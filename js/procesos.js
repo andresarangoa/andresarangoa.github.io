@@ -1,3 +1,5 @@
+var clicks = 0;
+var images= [];
 //
 function cualImagen(pos){
 	var imagenes = [ 
@@ -45,8 +47,19 @@ function repartir(){
 //
 function func(e) {
 	var c = e.childNodes;
-	c[0].style.visibility = "visible";
-	console.log(c[0])
+	c[0].style.visibility = "visible";	
+	images.push(c[0]);
+	clicks++;
+	if(clicks >= 3){
+		console.log(clicks,images[0], images[1])
+		if(!(images[0].getAttribute("src") == images[1].getAttribute("src"))){		
+			images[0].style.visibility = "hidden";	
+			images[1].style.visibility = "hidden";			
+		}
+		clicks =1;
+		images = [];
+	}
+
 }
 
 //
