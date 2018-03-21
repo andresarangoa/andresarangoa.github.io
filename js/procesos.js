@@ -1,4 +1,5 @@
-function cualImagen( fila, col ){
+//
+function cualImagen(pos){
 	var imagenes = [ 
 		"1.png",
 		"2.png",
@@ -11,19 +12,27 @@ function cualImagen( fila, col ){
 		"9.png",
 		"10.png"
 	];
-	var pos = (fila+1)*5 + col;
-	return "img/" + imagenes[ pos % 10 ];
+	//var pos = (fila+1)*5 + col;
+	return "img/" +imagenes[pos]; // + imagenes[ pos % 10 ];
 }
 
+//
 function htmlCarta( fila, col ){
 	return '<div class="recuadro" onclick="func(this)" ><img src="' + cualImagen(fila,col) + '" /></div>';
 }
 
+//
 function repartir(){
 	var cartas="";
+	var arreglo =	Imgdesorden();
+	var contador =0;
 	for( var fila = 0; fila < 4; fila++){
 		for( col = 0; col < 5; col++){
-			cartas += htmlCarta( fila, col );
+			cartas += htmlCarta(arreglo[contador]);
+			contador++;
+		}
+		if(contador >= 9){
+			contador =0;
 		}
 	}
 	
@@ -33,10 +42,28 @@ function repartir(){
 
 }	
 
-//document.getElementById("recuadro").addEventListener("click",func(this));
-
+//
 function func(e) {
 	var c = e.childNodes;
 	c[0].style.visibility = "visible";
 	console.log(c[0])
+}
+
+//
+function sameImg(img1, img2){
+	return img1 == img2;
+}
+
+//Genera un arreglo desordenado para la posicion de las imagenes
+function Imgdesorden(){
+	var myArray = ['0','1','2','3','4','5','6','7','8','9'];
+    var i,j,k;
+    for (i = myArray.length; i; i--) {
+        j = Math.floor(Math.random() * i);
+        k = myArray[i - 1];
+        myArray[i - 1] = myArray[j];
+        myArray[j] = k;
+	}
+	console.log(myArray)
+	return myArray;
 }
