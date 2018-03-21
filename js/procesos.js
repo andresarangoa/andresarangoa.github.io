@@ -50,21 +50,15 @@ function func(e) {
 	c[0].style.visibility = "visible";	
 	images.push(c[0]);
 	clicks++;
-	if(clicks >= 2){
-		console.log(clicks,images[0], images[1])
+	if(clicks >= 2){	
 		if(!(images[0].getAttribute("src") == images[1].getAttribute("src"))){		
 			images[0].style.visibility = "hidden";	
 			images[1].style.visibility = "hidden";			
 		}
-		clicks =0;
+		clicks = 0;
 		images = [];
 	}
 
-}
-
-//
-function sameImg(img1, img2){
-	return img1 == img2;
 }
 
 //Genera un arreglo desordenado para la posicion de las imagenes
