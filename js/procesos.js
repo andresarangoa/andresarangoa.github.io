@@ -16,17 +16,27 @@ function cualImagen( fila, col ){
 }
 
 function htmlCarta( fila, col ){
-	return '<div><img src="' + cualImagen(fila,col) + '" /></div>';
+	return '<div class="recuadro" onclick="func(this)" ><img src="' + cualImagen(fila,col) + '" /></div>';
 }
 
 function repartir(){
 	var cartas="";
-	for( var fila = 0; fila <= 4; fila++){
-		for( col = 0; col <= 5; col++){
+	for( var fila = 0; fila < 4; fila++){
+		for( col = 0; col < 5; col++){
 			cartas += htmlCarta( fila, col );
 		}
 	}
 	
 	tab = document.getElementById("tablero");
 	tab.innerHTML = cartas;
+
+
 }	
+
+//document.getElementById("recuadro").addEventListener("click",func(this));
+
+function func(e) {
+	var c = e.childNodes;
+	c[0].style.visibility = "visible";
+	console.log(c[0])
+}
