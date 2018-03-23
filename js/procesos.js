@@ -1,6 +1,8 @@
 var clicks = 0;
 var images= [];
-//
+var posImg = {};
+var puntaje = 0;
+//Funcion que retorna una imagen respecto a una posición recibida por parametro 
 function cualImagen(pos){
 	var imagenes = [ 
 		"1.png",
@@ -18,12 +20,12 @@ function cualImagen(pos){
 	return "img/" +imagenes[pos]; // + imagenes[ pos % 10 ];
 }
 
-//
+//Funcion encargada de agregar los div hijos al tablero
 function htmlCarta( fila, col ){
 	return '<div class="recuadro" onclick="func(this)" ><img src="' + cualImagen(fila,col) + '" /></div>';
 }
 
-//
+//Función  que reparte las fichas de manera aleatoria 
 function repartir(){
 	var cartas="";
 	var arreglo =	Imgdesorden();
@@ -34,6 +36,7 @@ function repartir(){
 			contador++;
 		}
 		if(contador >= 9){
+			arreglo =	Imgdesorden();
 			contador =0;
 		}
 	}
@@ -44,21 +47,38 @@ function repartir(){
 
 }	
 
-//
+//Función que maneja los eventos de los clicks 
 function func(e) {
+	
 	var c = e.childNodes;
+	var content; 
 	c[0].style.visibility = "visible";	
 	images.push(c[0]);
 	clicks++;
-	if(clicks >= 2){	
+
+	if(clicks >= 3){	
 		if(!(images[0].getAttribute("src") == images[1].getAttribute("src"))){		
 			images[0].style.visibility = "hidden";	
-			images[1].style.visibility = "hidden";			
+			images[1].style.visibility = "hidden";		
+			content = images[2];		
+			clicks = 1;
+			images = [];
+			images[0] = content;
+		}else{
+		
+			content = images[2];		
+			clicks = 1;
+			images = [];
+			images[0] = content;
+	
 		}
-		clicks = 0;
-		images = [];
 	}
-
+	if(clicks >= 2){
+		if((images[0].getAttribute("src") == images[1].getAttribute("src"))){
+			puntaje++;
+			document.getElementById("ph").innerHTML = "Puntaje: "+ puntaje;
+		}
+	}
 }
 
 //Genera un arreglo desordenado para la posicion de las imagenes
@@ -74,3 +94,4 @@ function Imgdesorden(){
 	console.log(myArray)
 	return myArray;
 }
+
