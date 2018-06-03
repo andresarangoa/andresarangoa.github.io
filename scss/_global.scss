@@ -1,0 +1,87 @@
+.row {
+    padding: 3%;
+    padding-top: 2%;
+    .cont{   
+        width: 100%;
+        height: 427px; 
+        background-color:$primary;  
+        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s;
+        @include animation-slide-left(slide-1, -100%, 0);    
+        animation: 2s ease-out 0s 1 slide-1;
+        .boxMj{
+            @include boxColorAndSize( 200px,57px, $redBox,4,relative,126px,321px);       
+            @include shadows();     
+        }
+        .boxMj1{
+            @include boxColorAndSize( 132px,57px, $yellowBox,3,relative,293px,334px);  
+            @include shadows();   
+        }
+        .inBackB{
+            padding-top: 7%; 
+            color: $whiteMain;
+            @include monserrat-font();
+            font-size: 15px;
+            line-height: 32px;
+            padding-right: 60px;
+            @include animation-slide-down(slide-2, -20%, 0);    
+            animation: 2s ease-out 0s 1 slide-2;
+        }       
+        h2{
+            @include h2-fontSize(6px);
+        } 
+        h3{
+            @include h2-fontSize(5px);
+        }
+        .inBackBH{
+            @include bungee-Shade-font();
+            color: $whiteMain;
+            font-size: 81px;
+            padding-left: 34px;
+            animation: 2s ease-out 0s 1 slide-1;
+        }
+        .spanHL{
+            padding-right: 20px;
+            padding-left: 20px;
+            color: $whiteMain;
+            padding-bottom: 20px;
+        }        
+        img{
+            vertical-align: middle;
+            width: 131px;
+            left: 198px;
+            bottom: 59px;
+            position: relative;
+            z-index: 2;
+        }
+        #circle {
+            width: 209px;
+            height: 209px;
+            -webkit-border-radius: 25;
+            -moz-border-radius: 25px;
+            border-radius: 104px;
+            background: $primaryDark;
+            position: relative;
+            bottom: 261px;
+            left: 151px;
+            z-index: 1;
+          } 
+    }
+}
+
+.aMain {
+    color: $whiteMain;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $redBox;
+    padding: 0.1em 0.4em;
+    &:hover {
+        @include aStandard($whiteMain,$redBox,none);
+    }
+    &:visited{
+        @include aStandard($whiteMain,$redBox,none);
+    }
+    &:active{
+        @include aStandard($whiteMain,$redBox,none);
+    }
+  }
+  
