@@ -1,0 +1,68 @@
+@mixin boxColorAndSize($xWidth, $xHeight, $xColor, $xIndex, $xPosition, $xLeft, $xBottom ) {
+    width: $xWidth;
+    height: $xHeight;
+    background-color: $xColor;
+    z-index: $xIndex;
+    position: $xPosition;
+    left: $xLeft;
+    bottom: $xBottom, ;
+}
+
+@mixin animation-slide-left($animation_name, $from, $to) {
+    @keyframes #{$animation_name} {
+        0% {
+            transform: translateX($from);
+        }
+
+        100% {
+            transform: translateX($to);
+        }
+    }
+}
+
+@mixin animation-slide-down($animation_name, $from, $to) {
+    @keyframes #{$animation_name} {
+        0% {
+            transform: translateY($from);
+        }
+
+        100% {
+            transform: translateY($to);
+        }
+    }
+}
+
+@mixin aStandard($colorFont, $bkColor, $txtDecoration) {
+    color: $colorFont;
+    background-color: $bkColor;
+    text-decoration: $txtDecoration;
+}
+
+@mixin monserrat-font() {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin bungee-Shade-font() {
+    font-family: 'Bungee Shade', cursive;
+}
+
+@mixin shadows() {
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
+    /* -webkit-box-shadow: 28px 23px 36px -9px rgba(0,0,0,0.22);
+  -moz-box-shadow: 28px 23px 36px -9px rgba(0,0,0,0.22);
+  box-shadow: 28px 23px 36px -9px rgba(0,0,0,0.22);*/
+}
+
+@mixin h2-fontSize($xBottom) {
+    font-family: "Firme-Book", Helvetica, Arial, sans-serif;
+    font-size: 23px;
+    font-weight: normal;
+    display: inline-block;
+    padding-top: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: absolute;
+    color: #fff;
+    bottom: $xBottom;
+    z-index: 5;
+}

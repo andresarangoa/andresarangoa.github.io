@@ -1,0 +1,78 @@
+// Primary Colors
+$primary: #292b2f !default;       // Main background or primary color
+$primaryDark: #12151c !default;   // Dark variant of the primary color
+$primaryAccent: #1c1e26 !default; // Accent color for primary theme
+
+// Text Colors
+$textMain: #ffffff !default;      // Main text color (white for contrast)
+$textDark: #12151c !default;      // Dark text (for use on light backgrounds)
+$textLight: #e1e1e1 !default;     // Light text for subtle secondary use
+
+// Secondary Colors
+$secondary: #0275d8 !default;     // Secondary color (blue tone)
+$secondaryLight: #5bc0de !default; // Lighter secondary shade
+$secondaryBg: #f5f5f5 !default;   // Light neutral background for secondary use
+
+// Highlight Colors
+$highlight: #ffe007 !default;     // Bright yellow for highlighting
+$redBox: #ff0726 !default;        // Highlight or warning red
+$yellowBox: #ffe007 !default;     // Highlight or attention yellow
+
+// Neutral Colors
+$whiteMain: #ffffff !default;     // Primary white
+$grayLight: #f8f9fa !default;     // Light gray for backgrounds
+$grayDark: #6c757d !default;      // Dark gray for secondary text
+
+// Additional or Functional Colors
+$success: #28a745 !default;       // Success green
+$info: #17a2b8 !default;          // Info blue
+$warning: #ffc107 !default;       // Warning amber
+$error: #dc3545 !default;         // Error red
+
+$grayDark:#2f2f2f;
+
+// Base Colors
+$grayBanner:   #292b2f;
+$redBanner:    #ff0726;
+$yellowBanner: #ffe007;
+
+// ---------------------------------------------------
+// GRAY BANNER SCALE
+// ---------------------------------------------------
+// The main gray banner
+$grayBanner: #292b2f;
+
+// A lighter "secondary" version of gray banner
+// e.g., used for hover states, sub-banners, etc.
+$secondaryGrayBanner: lighten($grayBanner, 15%);
+
+// The foreground color (text/icons) that appears ON the gray banner
+// usually white or a near-white for contrast
+$onGrayBanner: #ffffff;
+
+// If you want a text color for the secondary version:
+$onSecondaryGrayBanner: #ffffff; // or a slightly different shade if needed
+
+// ---------------------------------------------------
+// RED BANNER SCALE
+// ---------------------------------------------------
+$redBanner: #ff0726;
+
+// Optional: a secondary variation of red
+$secondaryRedBanner: lighten($redBanner, 15%);
+
+// Foreground colors
+$onRedBanner: #ffffff;           // text/icons on main red
+$onSecondaryRedBanner: #ffffff;  // text/icons on secondary red
+
+// ---------------------------------------------------
+// YELLOW BANNER SCALE
+// ---------------------------------------------------
+$yellowBanner: #ffe007;
+
+// A secondary variation (could darken if you want more contrast)
+$secondaryYellowBanner: darken($yellowBanner, 10%);
+
+// Foreground colors (usually black on yellow for best contrast)
+$onYellowBanner: #000000;
+$onSecondaryYellowBanner: #000000;
