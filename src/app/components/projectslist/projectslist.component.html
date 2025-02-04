@@ -1,0 +1,20 @@
+<div class="container__project__card" *ngFor="let category of projectCategories | keyvalue: customSort">
+    <h2>{{ formatCategoryName(category.key) }}</h2>
+    <div *ngFor="let project of category.value" class="project-card">
+      <div class="image-container">
+        <!-- Assuming you have an <app-image-carousel> component to display images -->
+        <app-image-carousel [images]="project.images"></app-image-carousel>
+      </div>
+      <div class="project-details">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+        <p>Technologies: {{ project.technologies.join(', ') }}</p>
+        <p>Type: {{ project.type }}</p>
+        <a [href]="project.link" target="_blank">Learn More</a>
+        <div *ngIf="project.clientLink">
+          <a [href]="project.clientLink" target="_blank">Client Website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

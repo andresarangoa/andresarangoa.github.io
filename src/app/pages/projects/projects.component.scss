@@ -2,7 +2,6 @@
 @use '../../../styles/mixins' as mix;
 
 .containerP{
-    background-color: aqua;
     display: grid;
     grid-template-columns: 30% 70% ;
     margin: 2rem;

@@ -1,0 +1,43 @@
+{
+    "outsourcingCompanies": [
+      {
+        "name": "ITEL Now",
+        "technologies": ["Android", "Kotlin", "OpenCV", "TensorFlow"],
+        "images": [
+          "https://play-lh.googleusercontent.com/7lUar491xyebbwMi3DhP_6BhTmC4UfG96WDEY1VsCK5EWmceDjRaGj1U6Lr4IW_1Ngk=w526-h296",
+          "https://play-lh.googleusercontent.com/rrODlPCDqRZc4VpcTD0_uQE0KK_AGOQvFbjT4nKQucgvYgV4zFq_P4J0AfQNlFD9oU7f=w526-h296"
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.itelinc.android.itelnow",
+        "description": "Developed an AI-driven Android application for efficient claims processing.",
+        "type": "Outsourcing Company",
+        "clientLink": "https://itelinc.com/"
+      }
+    ],
+    "ownProjects": [
+      {
+        "name": "Project One",
+        "technologies": ["Angular", "TypeScript", "CSS"],
+        "images": [
+            "https://play-lh.googleusercontent.com/7lUar491xyebbwMi3DhP_6BhTmC4UfG96WDEY1VsCK5EWmceDjRaGj1U6Lr4IW_1Ngk=w526-h296",
+            "https://play-lh.googleusercontent.com/rrODlPCDqRZc4VpcTD0_uQE0KK_AGOQvFbjT4nKQucgvYgV4zFq_P4J0AfQNlFD9oU7f=w526-h296"
+          ],
+        "link": "https://www.projectone.com",
+        "description": "A web application built with Angular for project management.",
+        "type": "Personal"
+      }
+    ],
+    "freelanceProjects": [
+      {
+        "name": "Freelance Project",
+        "technologies": ["React", "JavaScript", "HTML"],
+        "images": [
+            "https://play-lh.googleusercontent.com/7lUar491xyebbwMi3DhP_6BhTmC4UfG96WDEY1VsCK5EWmceDjRaGj1U6Lr4IW_1Ngk=w526-h296",
+            "https://play-lh.googleusercontent.com/rrODlPCDqRZc4VpcTD0_uQE0KK_AGOQvFbjT4nKQucgvYgV4zFq_P4J0AfQNlFD9oU7f=w526-h296"
+          ],
+        "link": "https://www.freelanceproject.com",
+        "description": "A freelance project involving React development.",
+        "type": "Freelance"
+      }
+    ]
+  }
+  
