@@ -1,9 +1,9 @@
 {
   "routes": {
-    "/https://andresarangoa.github.io/browser": {},
-    "/https://andresarangoa.github.io/browser/blog": {},
-    "/https://andresarangoa.github.io/browser/contact": {},
-    "/https://andresarangoa.github.io/browser/home": {},
-    "/https://andresarangoa.github.io/browser/projects": {}
+    "/https://andresarangoa.github.io": {},
+    "/https://andresarangoa.github.io/blog": {},
+    "/https://andresarangoa.github.io/contact": {},
+    "/https://andresarangoa.github.io/home": {},
+    "/https://andresarangoa.github.io/projects": {}
   }
 }
