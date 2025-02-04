@@ -1,0 +1,11 @@
+@use '../../../styles/variables' as vars;
+@use '../../../styles/mixins' as mix;
+
+.containerP{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 30% 70% ;
+    margin: 2rem;
+    padding-top: 8rem;
+    background-color: vars.$grayBanner;
+}

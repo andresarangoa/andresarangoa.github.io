@@ -1,13 +1,427 @@
-export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
+export default `<!DOCTYPE html><html lang="en"><head>
   <meta charset="utf-8">
   <title>MyApp</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="styles-5INURTSO.css"></head>
+<link rel="stylesheet" href="styles-UOBEQBVW.css"><style ng-app-id="ng">
+
+html[_ngcontent-ng-c3583827886], 
+body[_ngcontent-ng-c3583827886], 
+main[_ngcontent-ng-c3583827886], 
+content[_ngcontent-ng-c3583827886] {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+router-outlet[_ngcontent-ng-c3583827886] {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container[_ngcontent-ng-c3583827886] {
+  display: flex;
+  max-width: 100% !important;
+  width: 100%;
+  padding: 1rem;
+}
+.container[_ngcontent-ng-c3583827886]   main[_ngcontent-ng-c3583827886], 
+.container[_ngcontent-ng-c3583827886]   content[_ngcontent-ng-c3583827886] {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+header[_ngcontent-ng-c3583827886] {
+  margin: 2rem;
+}</style><style ng-app-id="ng">@charset "UTF-8";
+@import "https://fonts.googleapis.com/css2?family=Bungee&display=swap";
+
+
+
+.banner[_ngcontent-ng-c942377832] {
+  background-color: #292b2f;
+  display: grid;
+  width: 100%;
+  max-height: 32rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.banner__left[_ngcontent-ng-c942377832] {
+  display: grid;
+  grid-template-rows: 80% 20%;
+  padding-left: 10rem;
+}
+.banner__right[_ngcontent-ng-c942377832] {
+  padding: 4rem;
+  display: grid;
+  grid-template-rows: 5% 65% 20%;
+}
+.banner__right[_ngcontent-ng-c942377832]   p[_ngcontent-ng-c942377832] {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  color: white;
+}
+.banner__right__social[_ngcontent-ng-c942377832] {
+  align-self: end;
+  justify-self: end;
+  display: flex;
+  gap: 1rem;
+  margin-right: 2rem;
+}
+.banner__right__social[_ngcontent-ng-c942377832]   a[_ngcontent-ng-c942377832] {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.banner__right__social[_ngcontent-ng-c942377832]   a[_ngcontent-ng-c942377832]:hover {
+  opacity: 0.8;
+}
+.banner__right__nav[_ngcontent-ng-c942377832]   ul[_ngcontent-ng-c942377832] {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.banner__right__nav[_ngcontent-ng-c942377832]   li[_ngcontent-ng-c942377832] {
+}
+.banner__right__nav[_ngcontent-ng-c942377832]   a[_ngcontent-ng-c942377832] {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid red;
+  padding-bottom: 0.2rem;
+  transition: opacity 0.2s ease;
+}
+.banner__right__nav[_ngcontent-ng-c942377832]   a[_ngcontent-ng-c942377832]:hover {
+  opacity: 0.8;
+}
+.banner__first[_ngcontent-ng-c942377832] {
+  padding-top: 4rem;
+}
+.banner__first[_ngcontent-ng-c942377832]   h1[_ngcontent-ng-c942377832] {
+  font-size: 7rem;
+  font-family: "Bungee", bold;
+  color: white;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+.banner__first__h1--right[_ngcontent-ng-c942377832] {
+  margin-left: 10rem;
+}
+.banner__second[_ngcontent-ng-c942377832] {
+  position: relative;
+  padding-top: 4rem;
+  height: 100%;
+}
+.banner__second[_ngcontent-ng-c942377832]   img[_ngcontent-ng-c942377832] {
+  box-shadow: 1rem 1.6rem 2rem #12151c;
+  border-radius: 50%;
+  width: 20rem;
+  min-width: 150px;
+  position: relative;
+  z-index: 2;
+}
+.banner__second__title--top[_ngcontent-ng-c942377832], 
+.banner__second__title--bottom[_ngcontent-ng-c942377832] {
+  z-index: 4;
+  position: absolute;
+  left: 20%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+.banner__second__title--top[_ngcontent-ng-c942377832] {
+  top: 52%;
+  font-size: 1.5rem;
+  background-color: #ff0726;
+}
+.banner__second__title--bottom[_ngcontent-ng-c942377832] {
+  background-color: #ffe007;
+  font-size: 1.5rem;
+  top: 60%;
+  margin-left: 6rem;
+}
+@media (max-width: 768px) {
+  .banner[_ngcontent-ng-c942377832] {
+    display: block;
+    max-height: 70rem;
+    padding: 0;
+    grid-template-columns: none;
+  }
+  .banner__left[_ngcontent-ng-c942377832] {
+    display: block;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    grid-template-rows: auto;
+  }
+  .banner__first[_ngcontent-ng-c942377832] {
+    text-align: center;
+  }
+  .banner__first[_ngcontent-ng-c942377832]   h1[_ngcontent-ng-c942377832] {
+    font-size: 3rem;
+    margin-left: 0;
+  }
+  .banner__first__h1--right[_ngcontent-ng-c942377832] {
+    margin-left: 0;
+  }
+  .banner__right[_ngcontent-ng-c942377832] {
+    padding: 1rem;
+    display: block;
+    text-align: center;
+  }
+  .banner__right[_ngcontent-ng-c942377832]   p[_ngcontent-ng-c942377832] {
+    font-size: 1rem;
+  }
+  .banner__right__nav[_ngcontent-ng-c942377832] {
+    margin-top: 2rem;
+  }
+  .banner__right__nav[_ngcontent-ng-c942377832]   ul[_ngcontent-ng-c942377832] {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .banner__second[_ngcontent-ng-c942377832] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+  .banner__second[_ngcontent-ng-c942377832]   img[_ngcontent-ng-c942377832] {
+    width: 12rem;
+    box-shadow: 0.5rem 0.8rem 1rem #12151c;
+  }
+  .banner__second__title--top[_ngcontent-ng-c942377832], 
+   .banner__second__title--bottom[_ngcontent-ng-c942377832] {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .banner__second__title--top[_ngcontent-ng-c942377832] {
+    top: 80%;
+  }
+  .banner__second__title--bottom[_ngcontent-ng-c942377832] {
+    top: 95%;
+    margin-left: 0;
+  }
+}</style><style ng-app-id="ng">
+
+.containerP[_ngcontent-ng-c2689428394] {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 2rem;
+  padding-top: 8rem;
+  background-color: #292b2f;
+}</style><style ng-app-id="ng">
+
+.statistics-container[_ngcontent-ng-c3726565951] {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #292b2f;
+  color: #ccc;
+}
+.statistics-container[_ngcontent-ng-c3726565951]   .category[_ngcontent-ng-c3726565951] {
+  margin-bottom: 2rem;
+}
+.statistics-container[_ngcontent-ng-c3726565951]   .category[_ngcontent-ng-c3726565951]   h2[_ngcontent-ng-c3726565951] {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+.statistics-container[_ngcontent-ng-c3726565951]   .category[_ngcontent-ng-c3726565951]   .skill-list[_ngcontent-ng-c3726565951] {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.statistics-container[_ngcontent-ng-c3726565951]   .category[_ngcontent-ng-c3726565951]   .skill-item[_ngcontent-ng-c3726565951] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #33333b;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+.statistics-container[_ngcontent-ng-c3726565951]   .category[_ngcontent-ng-c3726565951]   .skill-item[_ngcontent-ng-c3726565951]   .skill-label[_ngcontent-ng-c3726565951] {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.statistics-container[_ngcontent-ng-c3726565951]   .category[_ngcontent-ng-c3726565951]   .skill-item[_ngcontent-ng-c3726565951]   .circular-progress[_ngcontent-ng-c3726565951] {
+  width: 60px;
+  height: 60px;
+}
+.statistics-container[_ngcontent-ng-c3726565951]   .category[_ngcontent-ng-c3726565951]   .skill-item[_ngcontent-ng-c3726565951]   .circular-progress[_ngcontent-ng-c3726565951]   .circular-chart[_ngcontent-ng-c3726565951] {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.statistics-container[_ngcontent-ng-c3726565951]   .category[_ngcontent-ng-c3726565951]   .skill-item[_ngcontent-ng-c3726565951]   .circular-progress[_ngcontent-ng-c3726565951]   .circular-chart[_ngcontent-ng-c3726565951]   .circle-bg[_ngcontent-ng-c3726565951] {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+.statistics-container[_ngcontent-ng-c3726565951]   .category[_ngcontent-ng-c3726565951]   .skill-item[_ngcontent-ng-c3726565951]   .circular-progress[_ngcontent-ng-c3726565951]   .circular-chart[_ngcontent-ng-c3726565951]   .circle[_ngcontent-ng-c3726565951] {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  stroke: #ff4f4f;
+}
+.statistics-container[_ngcontent-ng-c3726565951]   .category[_ngcontent-ng-c3726565951]   .skill-item[_ngcontent-ng-c3726565951]   .circular-progress[_ngcontent-ng-c3726565951]   .circular-chart[_ngcontent-ng-c3726565951]   .percentage[_ngcontent-ng-c3726565951] {
+  fill: #fff;
+  font-size: 0.5rem;
+  text-anchor: middle;
+}</style></head>
 <body><!--nghm--><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
 </script><script>window.__jsaction_bootstrap(document.body,"ng",["click"],[]);</script>
-  <app-root ng-version="19.1.4" ngh="1" ng-server-context="ssg"><div class="container-fluid"><router-outlet></router-outlet><app-layout ngh="0"><app-banner ngh="0"><div class="banner"><div class="banner__left"><div class="banner__row"><div class="banner__first"><h1 class="banner__first__h1">ANDRÉS</h1><h1 class="banner__first__h1--right">ARANGO</h1></div><div class="banner__second"><img src="profile.jpeg" alt="Profile Picture"><h2 class="banner__second__title--top">Mobile Developer</h2><h2 class="banner__second__title--bottom"> AI &amp; Game Developer Enthusiast </h2></div></div></div><div class="banner__right"><div class="banner__right__social"><a href="https://www.linkedin.com/in/andr%C3%A9s-felipe-arango-rodr%C3%ADguez-67a641143/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a><a href="https://github.com/andresarangoa/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://www.tiktok.com/@andresarangopro" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></div><p> Ingeniero de Software con más de seis años de experiencia. He adquirido habilidades desarrollando diversas aplicaciones para grupos de investigación, así como colaborando con empresas de todo el mundo. Experto en Android Apps. Apasionado por afrontar desafíos. Apasionado por la programación, profundamente comprometido con la creación de código limpio y el cumplimiento de las buenas prácticas. Entusiasta del desarrollo de videojuegos, la IA y casi cualquier cosa que se trate de tecnología. </p><nav class="banner__right__nav"><ul><li><a routerlink="/projects" href="/projects" jsaction="click:;">Projects</a></li><li><a routerlink="/blog" href="/blog" jsaction="click:;">Blog</a></li><li><a routerlink="/contact" href="/contact" jsaction="click:;">Contact</a></li></ul></nav></div></div></app-banner></app-layout><!----></div></app-root>
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-622HDYF3.js" type="module"></script>
+  <app-root ng-version="19.1.4" ngh="3" ng-server-context="ssg"><div class="container-fluid"><router-outlet></router-outlet><app-layout _nghost-ng-c3583827886="" ngh="2"><div _ngcontent-ng-c3583827886="" classname="content"><header _ngcontent-ng-c3583827886=""><app-banner _ngcontent-ng-c3583827886="" _nghost-ng-c942377832="" ngh="0"><div _ngcontent-ng-c942377832="" class="banner"><div _ngcontent-ng-c942377832="" class="banner__left"><div _ngcontent-ng-c942377832="" class="banner__row"><div _ngcontent-ng-c942377832="" class="banner__first"><h1 _ngcontent-ng-c942377832="" class="banner__first__h1">ANDRÉS</h1><h1 _ngcontent-ng-c942377832="" class="banner__first__h1--right">ARANGO</h1></div><div _ngcontent-ng-c942377832="" class="banner__second"><img _ngcontent-ng-c942377832="" src="assets/profile.jpeg" alt="Profile Picture"><h2 _ngcontent-ng-c942377832="" class="banner__second__title--top">Mobile Developer</h2><h2 _ngcontent-ng-c942377832="" class="banner__second__title--bottom"> AI &amp; Game Developer Enthusiast </h2></div></div></div><div _ngcontent-ng-c942377832="" class="banner__right"><div _ngcontent-ng-c942377832="" class="banner__right__social"><a _ngcontent-ng-c942377832="" href="https://www.linkedin.com/in/andr%C3%A9s-felipe-arango-rodr%C3%ADguez-67a641143/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i _ngcontent-ng-c942377832="" class="fab fa-linkedin"></i></a><a _ngcontent-ng-c942377832="" href="https://github.com/andresarangoa/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i _ngcontent-ng-c942377832="" class="fab fa-github"></i></a><a _ngcontent-ng-c942377832="" href="https://www.tiktok.com/@andresarangopro" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i _ngcontent-ng-c942377832="" class="fab fa-tiktok"></i></a></div><p _ngcontent-ng-c942377832=""> Ingeniero de Software con más de seis años de experiencia. He adquirido habilidades desarrollando diversas aplicaciones para grupos de investigación, así como colaborando con empresas de todo el mundo. Experto en Android Apps. Apasionado por afrontar desafíos. Apasionado por la programación, profundamente comprometido con la creación de código limpio y el cumplimiento de las buenas prácticas. Entusiasta del desarrollo de videojuegos, la IA y casi cualquier cosa que se trate de tecnología. </p><nav _ngcontent-ng-c942377832="" class="banner__right__nav"><ul _ngcontent-ng-c942377832=""><li _ngcontent-ng-c942377832=""><a _ngcontent-ng-c942377832="" routerlink="/projects" ng-reflect-router-link="/projects" href="/projects" jsaction="click:;">Projects</a></li><li _ngcontent-ng-c942377832=""><a _ngcontent-ng-c942377832="" routerlink="/blog" ng-reflect-router-link="/blog" href="/blog" jsaction="click:;">Blog</a></li><li _ngcontent-ng-c942377832=""><a _ngcontent-ng-c942377832="" routerlink="/contact" ng-reflect-router-link="/contact" href="/contact" jsaction="click:;">Contact</a></li></ul></nav></div></div></app-banner></header><main _ngcontent-ng-c3583827886=""><router-outlet _ngcontent-ng-c3583827886=""></router-outlet><app-projects _nghost-ng-c2689428394="" ngh="0"><body _ngcontent-ng-c2689428394=""><div _ngcontent-ng-c2689428394="" class="containerP"><app-side-statistics _ngcontent-ng-c2689428394="" _nghost-ng-c3726565951="" ngh="1"><div _ngcontent-ng-c3726565951="" class="statistics-container"><div _ngcontent-ng-c3726565951="" class="category"><h2 _ngcontent-ng-c3726565951="">Android</h2><div _ngcontent-ng-c3726565951="" class="skill-list"><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Android (90%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="90, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">90%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Coroutines (90%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="90, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">90%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Koin (100%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="100, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">100%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Dagger (70%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="70, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">70%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> GraphQL (95%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="95, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">95%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> JetpackCompose (85%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="85, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">85%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Groovy (40%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="40, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">40%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> JUnit (80%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="80, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">80%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> SnapshotTest (90%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="90, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">90%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Espresso tests (40%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="40, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">40%</text></svg></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></div><div _ngcontent-ng-c3726565951="" class="category"><h2 _ngcontent-ng-c3726565951="">Kotlin</h2><div _ngcontent-ng-c3726565951="" class="skill-list"><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Kotlin (90%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="90, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">90%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> KMM (70%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="70, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">70%</text></svg></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></div><div _ngcontent-ng-c3726565951="" class="category"><h2 _ngcontent-ng-c3726565951="">IOS</h2><div _ngcontent-ng-c3726565951="" class="skill-list"><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> IOS (20%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="20, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">20%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> SwiftUI (20%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="20, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">20%</text></svg></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></div><div _ngcontent-ng-c3726565951="" class="category"><h2 _ngcontent-ng-c3726565951="">JavaScript</h2><div _ngcontent-ng-c3726565951="" class="skill-list"><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> JS (50%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="50, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">50%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> React Native (40%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="40, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">40%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> React (50%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="50, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">50%</text></svg></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></div><div _ngcontent-ng-c3726565951="" class="category"><h2 _ngcontent-ng-c3726565951="">Dart</h2><div _ngcontent-ng-c3726565951="" class="skill-list"><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Dart (30%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="30, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">30%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Flutter (30%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="30, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">30%</text></svg></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></div><div _ngcontent-ng-c3726565951="" class="category"><h2 _ngcontent-ng-c3726565951="">Game Development</h2><div _ngcontent-ng-c3726565951="" class="skill-list"><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Game Develop (General) (40%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="40, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">40%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Unity (10%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="10, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">10%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Unreal Engine 5 (30%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="30, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">30%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> C++ (20%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="20, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">20%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> C (20%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="20, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">20%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> C# (20%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="20, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">20%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Blender (15%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="15, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">15%</text></svg></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></div><div _ngcontent-ng-c3726565951="" class="category"><h2 _ngcontent-ng-c3726565951="">Cloud &amp; Containers</h2><div _ngcontent-ng-c3726565951="" class="skill-list"><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> GCP (10%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="10, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">10%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> AWS (10%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="10, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">10%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Docker (5%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="5, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">5%</text></svg></div></div><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Kubernetes (5%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="5, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">5%</text></svg></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></div><div _ngcontent-ng-c3726565951="" class="category"><h2 _ngcontent-ng-c3726565951="">Leadership</h2><div _ngcontent-ng-c3726565951="" class="skill-list"><div _ngcontent-ng-c3726565951="" class="skill-item"><div _ngcontent-ng-c3726565951="" class="skill-label"> Team Leadership (70%) </div><div _ngcontent-ng-c3726565951="" class="circular-progress"><svg _ngcontent-ng-c3726565951="" viewBox="0 0 36 36" class="circular-chart"><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path><path _ngcontent-ng-c3726565951="" d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" stroke-dasharray="70, 100"></path><text _ngcontent-ng-c3726565951="" x="18" y="20.35" class="percentage">70%</text></svg></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object]"
+}--></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></app-side-statistics></div></body></app-projects><!--container--></main></div></app-layout><!--container--></div></app-root>
+<script src="polyfills-KIGPDB5H.js" type="module"></script><script src="main-QHLO7KS4.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"1":[{"i":"c2465065776","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"4241542805":{"b":{"skills":[{"category":"Android","items":[{"name":"Android","percentage":90},{"name":"Coroutines","percentage":90},{"name":"Koin","percentage":100},{"name":"Dagger","percentage":70},{"name":"GraphQL","percentage":95},{"name":"JetpackCompose","percentage":85},{"name":"Groovy","percentage":40},{"name":"JUnit","percentage":80},{"name":"SnapshotTest","percentage":90},{"name":"Espresso tests","percentage":40}]},{"category":"Kotlin","items":[{"name":"Kotlin","percentage":90},{"name":"KMM","percentage":70}]},{"category":"IOS","items":[{"name":"IOS","percentage":20},{"name":"SwiftUI","percentage":20}]},{"category":"JavaScript","items":[{"name":"JS","percentage":50},{"name":"React Native","percentage":40},{"name":"React","percentage":50}]},{"category":"Dart","items":[{"name":"Dart","percentage":30},{"name":"Flutter","percentage":30}]},{"category":"Game Development","items":[{"name":"Game Develop (General)","percentage":40},{"name":"Unity","percentage":10},{"name":"Unreal Engine 5","percentage":30},{"name":"C++","percentage":20},{"name":"C","percentage":20},{"name":"C#","percentage":20},{"name":"Blender","percentage":15}]},{"category":"Cloud & Containers","items":[{"name":"GCP","percentage":10},{"name":"AWS","percentage":10},{"name":"Docker","percentage":5},{"name":"Kubernetes","percentage":5}]},{"category":"Leadership","items":[{"name":"Team Leadership","percentage":70}]}]},"h":{},"s":200,"st":"OK","u":"assets/stats.json","rt":"json"},"__nghData__":[{},{"t":{"1":"t0"},"c":{"1":[{"i":"t0","r":1,"t":{"4":"t1"},"c":{"4":[{"i":"t1","r":1,"x":10}]}},{"i":"t0","r":1,"t":{"4":"t1"},"c":{"4":[{"i":"t1","r":1,"x":2}]},"x":2},{"i":"t0","r":1,"t":{"4":"t1"},"c":{"4":[{"i":"t1","r":1,"x":3}]}},{"i":"t0","r":1,"t":{"4":"t1"},"c":{"4":[{"i":"t1","r":1,"x":2}]}},{"i":"t0","r":1,"t":{"4":"t1"},"c":{"4":[{"i":"t1","r":1,"x":7}]}},{"i":"t0","r":1,"t":{"4":"t1"},"c":{"4":[{"i":"t1","r":1,"x":4}]}},{"i":"t0","r":1,"t":{"4":"t1"},"c":{"4":[{"i":"t1","r":1}]}}]}},{"c":{"4":[{"i":"c2689428394","r":1}]}},{"c":{"1":[{"i":"c3583827886","r":1}]}}]}</script></body></html>`;

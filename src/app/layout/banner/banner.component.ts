@@ -1,5 +1,5 @@
-import { Component, inject } from '@angular/core';
-import { Router, RouterLink,  } from '@angular/router';
+import { Component } from '@angular/core';
+import {  RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-banner',
@@ -9,5 +9,4 @@ import { Router, RouterLink,  } from '@angular/router';
 })
 export class BannerComponent {
 
-  router = inject(Router)
 }
