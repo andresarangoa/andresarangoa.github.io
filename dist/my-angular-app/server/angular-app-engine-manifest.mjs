@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://andresarangoa.github.io/',
+  basePath: '/',
   entryPoints: new Map([['', () => import('./main.server.mjs')]]),
 };
   
