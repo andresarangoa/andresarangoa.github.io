@@ -1,0 +1,264 @@
+@use '../../../styles/variables' as vars;
+@use '../../../styles/mixins' as mix;
+@import "https://fonts.googleapis.com/css?family=Bungee+Shade|Dekko|Luckiest+Guy|Ultra|Montserrat";
+
+.banner {
+    background-color: vars.$grayBanner; 
+    display: grid;
+    width: 100%;
+    max-height: 32rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__left {
+        display: grid;
+
+        grid-template-rows: 80% 20%;
+        padding-left: 10rem;
+        // background-color: red;
+    }
+
+    &__right {
+        padding: 4rem;
+        display: grid;
+        grid-template-rows: 5% 65% 20%;
+
+        p {
+            font-size: 1.2rem;
+
+            margin-top: 3rem;
+            color: white;
+        }
+
+
+        &__social {
+            align-self: end;
+            /* push them to bottom of the row */
+            justify-self: end;
+            /* or 'end' if you want them on the right side */
+            display: flex;
+            gap: 1rem;
+            margin-right: 2rem;
+            a {
+                color: #fff;
+                font-size: 1.5rem;
+                text-decoration: none;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        &__nav {
+            ul {
+                list-style: none;
+                display: flex;
+                /* places links side by side */
+                gap: 2rem;
+                /* space between items */
+            }
+
+            li {
+                /* no special styles needed by default; but feel free to add if you want */
+            }
+
+            a {
+                /* White text */
+                color: #fff;
+                text-decoration: none;
+
+                /* Red underline (using border-bottom) */
+                border-bottom: 2px solid red;
+                padding-bottom: 0.2rem;
+
+                /* Optional: a hover effect */
+                transition: opacity 0.2s ease;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+    }
+
+    &__first {
+        padding-top: 4rem;
+
+        h1 {
+            font-size: 7rem;
+            /* Adjust title size */
+            font-family: 'Bungee', cursive;
+            /* Decorative font */
+            color: white;
+            /* High contrast on dark background */
+            margin-bottom: 0px;
+            line-height: 1;
+        }
+
+        &__h1--right {
+            margin-left: 10rem;
+        }
+
+    }
+
+    &__second {
+        position: relative;
+        padding-top: 4rem;
+        height: 100%;
+
+        img {
+            box-shadow: 1rem 1.6rem 2rem #12151c;
+            border-radius: 50%;
+            width: 20rem;
+            /* Circular image */
+            min-width: 150px;
+            /* Adjust size of the image */
+            position: relative;
+            z-index: 2;
+            /* Ensures it layers correctly */
+        }
+
+        &__title--top,
+        &__title--bottom {
+            z-index: 4;
+            position: absolute;
+            left: 20%;
+            /* start horizontally at the center */
+            transform: translateX(-50%);
+            /* shift left by 50% of its own width to truly center */
+            color: #fff;
+            /* set text color so it’s visible over the image */
+            text-align: center;
+            padding: 0.5rem 1rem;
+            /* Optionally, add a background or shadow for better readability:
+             background-color: rgba(0, 0, 0, 0.5);
+             border-radius: 0.3rem;
+          */
+        }
+
+        &__title--top {
+            top: 52%;
+            font-size: 1.5rem;
+            background-color: vars.$redBanner;
+            /* 20% down from the top of the parent container */
+        }
+
+        &__title--bottom {
+            background-color: vars.$yellowBanner;
+            font-size: 1.5rem;
+            top: 60%;
+            margin-left: 6rem;
+            /* 30% down from the top => ~10% below the first heading */
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        /* Switch to 1-column layout */
+        display: block;
+        max-height: 70rem;
+        /* so it can grow if needed */
+        /* less margin on small screens */
+        padding: 0;
+
+        /* Remove or simplify columns for smaller screens */
+        grid-template-columns: none;
+        /* or remove grid altogether */
+    }
+
+    /* Adjust the "left" part to stack naturally */
+    .banner__left {
+        display: block;
+        padding-left: 1rem;
+        /* reduce padding to fit mobile */
+        margin-bottom: 2rem;
+        /* add space below */
+        grid-template-rows: auto;
+        /* not strictly necessary, but reduces complexity */
+    }
+
+    /* Adjust the "first" section’s title sizes for mobile */
+    .banner__first {
+        text-align: center;
+
+        h1 {
+            font-size: 3rem;
+            margin-left: 0;
+            /* remove any left margin */
+        }
+    }
+
+    .banner__first__h1--right {
+        margin-left: 0;
+        /* remove big left margin for phone */
+    }
+
+    /* Adjust the right side */
+    .banner__right {
+        padding: 1rem;
+        /* reduce padding on mobile */
+        display: block;
+        /* simpler layout, no grid needed here */
+        text-align: center;
+
+        /* optional if you want to center text on phone */
+        p {
+            font-size: 1rem;
+            /* slightly smaller text on phone */
+        }
+
+        &__nav {
+            margin-top: 2rem;
+
+            ul {
+                justify-content: center;
+                /* center nav items if desired */
+                gap: 1rem;
+                /* reduce gap */
+            }
+        }
+    }
+
+    /* Adjust the second image section */
+    .banner__second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* centers the image (and other items) horizontally */
+        padding-top: 2rem;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+
+        img {
+            width: 12rem;
+            /* smaller image on phone */
+            box-shadow: 0.5rem 0.8rem 1rem #12151c;
+        }
+
+        &__title--top,
+        &__title--bottom {
+            /* Move them so they are more central on smaller screens */
+            left: 50%;
+            /* center horizontally */
+            transform: translateX(-50%);
+            font-size: 1rem;
+            /* smaller text for phone */
+            padding: 0.3rem 0.6rem;
+            /* less padding */
+        }
+
+        &__title--top {
+            top: 80%;
+        }
+
+        &__title--bottom {
+            top: 95%;
+            margin-left: 0;
+            /* remove extra margin */
+        }
+    }
+}
