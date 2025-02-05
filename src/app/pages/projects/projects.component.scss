@@ -8,3 +8,21 @@
     padding-top: 8rem;
     background-color: vars.$grayBanner;
 }
+
+@media (max-width: 768px) {
+   
+    .containerP {
+    margin: 0.1rem;
+      grid-template-columns: 1fr; /* Single column */
+      grid-template-rows: auto auto; /* Two rows */
+    }
+  
+    .containerP > :first-child {
+      grid-row: 2; /* Place the first child in the second row */
+    }
+  
+    .containerP > :nth-child(2) {
+      grid-row: 1; /* Place the second child in the first row */
+    }
+  }
+  

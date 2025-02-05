@@ -76,3 +76,4 @@ $secondaryYellowBanner: color.adjust($yellowBanner, $lightness: -10%);
 // Foreground colors (usually black on yellow for best contrast)
 $onYellowBanner: #000000;
 $onSecondaryYellowBanner: #000000;
+$breakpoint-sm: 600px;
