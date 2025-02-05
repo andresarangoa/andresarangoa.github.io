@@ -1,3 +1,18 @@
-
-    <div class="containerContacts">
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="subject">Subject:</label>
+        <input id="subject" formControlName="subject" type="text" required />
     </div>
+
+    <div>
+        <label for="email">Email:</label>
+        <input id="email" formControlName="email" type="email" required />
+    </div>
+
+    <div>
+        <label for="message">Message:</label>
+        <textarea id="message" formControlName="message" required></textarea>
+    </div>
+
+    <button type="submit" [disabled]="contactForm.invalid">Send</button>
+</form>

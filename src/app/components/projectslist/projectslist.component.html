@@ -13,7 +13,7 @@
             <p><span class="container__project__card__inner__project__details__subtitle">Type:</span> {{ project.type }}
             </p>
             <p><span *ngIf="project.oc" class="container__project__card__inner__project__details__subtitle">Outsourcing
-                    Company: </span> <a [href]="project.clientLink" target="_blank">{{ project.ocLink }}</a> </p>
+                    Company: </span> <a [href]="project.clientLink" target="_blank">{{ project.oc }}</a> </p>
             <p><span *ngIf="project.client" class="container__project__card__inner__project__details__subtitle">Final
                     client: </span> <a [href]="project.clientLink" target="_blank">{{ project.client }}</a> </p>
             <a [href]="project.link" target="_blank">App Store Link</a>

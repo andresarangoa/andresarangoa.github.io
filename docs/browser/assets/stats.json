@@ -68,7 +68,8 @@
       {
         "category": "Leadership",
         "items": [
-          { "name": "Team Leadership", "percentage": 70 }
+          { "name": "Team Leadership", "percentage": 70 },
+          { "name": "Team Work", "percentage": 70 }
         ]
       }
     ]
