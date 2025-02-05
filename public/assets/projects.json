@@ -1,43 +1,129 @@
 {
     "outsourcingCompanies": [
-      {
-        "name": "ITEL Now",
-        "technologies": ["Android", "Kotlin", "OpenCV", "TensorFlow"],
-        "images": [
-          "https://play-lh.googleusercontent.com/7lUar491xyebbwMi3DhP_6BhTmC4UfG96WDEY1VsCK5EWmceDjRaGj1U6Lr4IW_1Ngk=w526-h296",
-          "https://play-lh.googleusercontent.com/rrODlPCDqRZc4VpcTD0_uQE0KK_AGOQvFbjT4nKQucgvYgV4zFq_P4J0AfQNlFD9oU7f=w526-h296"
-        ],
-        "link": "https://play.google.com/store/apps/details?id=com.itelinc.android.itelnow",
-        "description": "Developed an AI-driven Android application for efficient claims processing.",
-        "type": "Outsourcing Company",
-        "clientLink": "https://itelinc.com/"
-      }
+        {
+            "name": "ITEL Now",
+            "technologies": [
+                "Android",
+                "Kotlin",
+                "OpenCV",
+                "TensorFlow",
+                "Jetpack compose",
+                "MVP"
+            ],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/itel/itel_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/itel/itel_2.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/itel/itel_3.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/itel/itel_4.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/itel/itel_5.png"
+            ],
+            "oc": "Blankfactor",
+            "ocLink":"https://blankfactor.com/",
+            "client": "ITEL Labs",
+            "link": "https://play.google.com/store/apps/details?id=com.itelinc.android.itelnow",
+            "description": "Developed an AI-driven Android application for efficient claims processing.",
+            "type": "Outsourcing Company",
+            "clientLink": "https://itelinc.com/"
+        },
+        {
+            "name": "NogginX",
+            "technologies": [
+                "Android",
+                "Kotlin",
+                "MVVM",
+                "Clean Architecture",
+                "Jetpack compose"
+            ],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/paramount/noggin_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/paramount/noggin_2.png"
+            ],
+            "oc": "Globant",
+            "ocLink":"https://www.globant.com/es",
+            "client": "Paramount",
+            "description": "Developed some features, and manteined nogginx Application",
+            "type": "Outsourcing Company",
+            "clientLink": "https://www.paramount.com/"
+        },
+        {
+            "name": "Seasoned",
+            "technologies": [
+                "Android",
+                "Kotlin",
+                "MVVM",
+                "Clean Architecture",
+                "GraphQL",
+                "Jetpack compose"
+            ],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_2.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_3.png"
+            ],
+            "link": "https://play.google.com/store/apps/details?id=co.seasoned.seasonedMessaging&hl=es_CO",
+            "description": "Developed some features, and manteind seasoned Application",
+            "oc": "Globant",
+            "ocLink":"https://www.globant.com/es",
+            "type": "Outsourcing Company",
+            "client": "Seasoned",
+            "clientLink": "https://www.seasoned.co/"
+        }
     ],
     "ownProjects": [
-      {
-        "name": "Project One",
-        "technologies": ["Angular", "TypeScript", "CSS"],
-        "images": [
-            "https://play-lh.googleusercontent.com/7lUar491xyebbwMi3DhP_6BhTmC4UfG96WDEY1VsCK5EWmceDjRaGj1U6Lr4IW_1Ngk=w526-h296",
-            "https://play-lh.googleusercontent.com/rrODlPCDqRZc4VpcTD0_uQE0KK_AGOQvFbjT4nKQucgvYgV4zFq_P4J0AfQNlFD9oU7f=w526-h296"
-          ],
-        "link": "https://www.projectone.com",
-        "description": "A web application built with Angular for project management.",
-        "type": "Personal"
-      }
+        {
+            "name": "Project One",
+            "technologies": [
+                "Angular",
+                "TypeScript",
+                "CSS"
+            ],
+            "images": [
+                "https://play-lh.googleusercontent.com/7lUar491xyebbwMi3DhP_6BhTmC4UfG96WDEY1VsCK5EWmceDjRaGj1U6Lr4IW_1Ngk=w526-h296",
+                "https://play-lh.googleusercontent.com/rrODlPCDqRZc4VpcTD0_uQE0KK_AGOQvFbjT4nKQucgvYgV4zFq_P4J0AfQNlFD9oU7f=w526-h296"
+            ],
+            "link": "https://www.projectone.com",
+            "description": "A web application built with Angular for project management.",
+            "type": "Personal"
+        }
     ],
     "freelanceProjects": [
-      {
-        "name": "Freelance Project",
-        "technologies": ["React", "JavaScript", "HTML"],
-        "images": [
-            "https://play-lh.googleusercontent.com/7lUar491xyebbwMi3DhP_6BhTmC4UfG96WDEY1VsCK5EWmceDjRaGj1U6Lr4IW_1Ngk=w526-h296",
-            "https://play-lh.googleusercontent.com/rrODlPCDqRZc4VpcTD0_uQE0KK_AGOQvFbjT4nKQucgvYgV4zFq_P4J0AfQNlFD9oU7f=w526-h296"
-          ],
-        "link": "https://www.freelanceproject.com",
-        "description": "A freelance project involving React development.",
-        "type": "Freelance"
-      }
+        {
+            "name": "Let's Go",
+            "technologies": [
+                "Android",
+                "Kotlin",
+                "MVVM",
+                "Clean Architecture"
+            ],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_2.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_3.png"
+            ],
+            "link": "https://play.google.com/store/apps/details?id=co.seasoned.seasonedMessaging&hl=es_CO",
+            "description": "Developed some features, and manteind seasoned Application",
+            "type": "Freelance",
+            "client": "Let's Go",
+            "clientLink": "https://www.seasoned.co/"
+        },
+        {
+            "name": "GuascaFM",
+            "technologies": [
+                "Android",
+                "IOS",
+                "React Native",
+                "Redux"
+            ],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_2.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_3.png"
+            ],
+            "link": "https://play.google.com/store/apps/details?id=co.seasoned.seasonedMessaging&hl=es_CO",
+            "description": "Developed some features, and manteind seasoned Application",
+            "type": "Freelance",
+            "client": "Guasca F.M",
+            "clientLink": "https://play.google.com/store/apps/details?id=co.seasoned.seasonedMessaging&hl=es_CO"
+        }
     ]
-  }
-  
+}

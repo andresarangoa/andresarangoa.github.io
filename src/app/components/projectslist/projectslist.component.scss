@@ -1,63 +1,75 @@
 $border-color: #ccc;
 $border-radius: 8px;
 $padding: 16px;
-$margin:  2rem;
+$margin: 2rem;
 $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-$text-color: #666;
+$text-color: #333;
 $link-color: #007bff;
 $link-hover-decoration: underline;
 
-.container__project__card{
-
+.container__project__card {
     margin: $margin;
-    margin-top: $margin*2;
-    color: #ccc;
-    .project-card {
+    margin-top: $margin * 2;
+    color: #eeeeee; // Darker text color for better readability
+
+    &__inner {
+        margin: $margin;
+        background-color: #ffffff; // White background for the card
         border: 1px solid $border-color;
         border-radius: $border-radius;
         padding: $padding;
         display: flex;
         align-items: flex-start;
-        box-shadow: $box-shadow;
-      
+        box-shadow: 0 4px 8px rgb(0, 0, 0); // Subtle shadow effect
+
+
         .image-container {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-          margin-right: 16px;
-          justify-content: center;
-          flex: 0.2;
-          .project-image {
-            max-width: 150px;
-            height: auto;
-            align-self: center;
-            border-radius: $border-radius;
-          }
-        }
-      
-        .project-details {
-          flex: 1;
-      
-          h2 {
-              color: #ccc;
-            margin: 12px 0;
-          }
-      
-          p {
-            color: $text-color;
-          }
-      
-          a {
-            display: inline-block;
-            margin-top: 8px;
-            color: $link-color;
-            text-decoration: none;
-      
-            &:hover {
-              text-decoration: $link-hover-decoration;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-right: 16px;
+            justify-content: center;
+            flex: 0.2;
+
+            .project-image {
+                max-width: 150px;
+                height: auto;
+                align-self: center;
+                border-radius: $border-radius;
             }
-          }
         }
-      }
-      
+
+        &__project__details {
+            flex: 1;
+
+            &__subtitle {
+                font-weight: bold;
+            }
+
+            h2 {
+                color: #0f0f0f; // Darker heading color
+                margin: 12px 0;
+            }
+
+            h3 {
+                color: #0f0f0f; // Darker heading color
+                margin: 12px 0;
+            }
+
+            p {
+                color: $text-color;
+            }
+
+            a {
+                display: inline-block;
+                margin-top: 8px;
+                color: $link-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: $link-hover-decoration;
+                }
+            }
+        }
+    }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule ,KeyValue} from '@angular/common'; 
 import { ImageCarouselComponent } from '../image-carousel/image-carousel.component';
+import { AngularUrlPreviewModule } from 'angular-url-preview';
 
 interface Project {
   name: string;
@@ -10,6 +11,9 @@ interface Project {
   link: string;
   description: string;
   type: string;
+  oc?: string;
+  ocLink?: string;
+  client?: string;
   clientLink?: string;
 }
 
