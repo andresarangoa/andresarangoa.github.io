@@ -18,7 +18,7 @@
                 "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/itel/itel_5.png"
             ],
             "oc": "Blankfactor",
-            "ocLink":"https://blankfactor.com/",
+            "ocLink": "https://blankfactor.com/",
             "client": "ITEL Labs",
             "link": "https://play.google.com/store/apps/details?id=com.itelinc.android.itelnow",
             "description": "Developed an AI-driven Android application for efficient claims processing.",
@@ -39,7 +39,7 @@
                 "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/paramount/noggin_2.png"
             ],
             "oc": "Globant",
-            "ocLink":"https://www.globant.com/es",
+            "ocLink": "https://www.globant.com/es",
             "client": "Paramount",
             "description": "Developed some features, and manteined nogginx Application",
             "type": "Outsourcing Company",
@@ -63,7 +63,7 @@
             "link": "https://play.google.com/store/apps/details?id=co.seasoned.seasonedMessaging&hl=es_CO",
             "description": "Developed some features, and manteind seasoned Application",
             "oc": "Globant",
-            "ocLink":"https://www.globant.com/es",
+            "ocLink": "https://www.globant.com/es",
             "type": "Outsourcing Company",
             "client": "Seasoned",
             "clientLink": "https://www.seasoned.co/"
@@ -71,40 +71,43 @@
     ],
     "ownProjects": [
         {
-            "name": "Project One",
+            "name": "React Calendar Library",
             "technologies": [
-                "Angular",
+                "React",
                 "TypeScript",
-                "CSS"
+                "SASS"
             ],
             "images": [
-                "https://play-lh.googleusercontent.com/7lUar491xyebbwMi3DhP_6BhTmC4UfG96WDEY1VsCK5EWmceDjRaGj1U6Lr4IW_1Ngk=w526-h296",
-                "https://play-lh.googleusercontent.com/rrODlPCDqRZc4VpcTD0_uQE0KK_AGOQvFbjT4nKQucgvYgV4zFq_P4J0AfQNlFD9oU7f=w526-h296"
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/calendar_library/calendar_library_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/calendar_library/calendar_library_2.png"
             ],
-            "link": "https://www.projectone.com",
-            "description": "A web application built with Angular for project management.",
+            "link": "https://www.npmjs.com/package/@farango/calendar_library",
+            "description": "The Event Calendar is a simple and responsive React component that displays a monthly calendar with support for events. This component is built with React and SCSS and can be easily integrated into your React applications.",
             "type": "Personal"
         }
     ],
     "freelanceProjects": [
         {
-            "name": "Let's Go",
+            "name": "ZCEBOXCOLOMBIA",
             "technologies": [
-                "Android",
-                "Kotlin",
-                "MVVM",
+                "React",
+                "Javascript",
+                "Redux",
+                "AWS",
+                "Python",
+                "SASS",
                 "Clean Architecture"
             ],
             "images": [
-                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_1.png",
-                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_2.png",
-                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_3.png"
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_2.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_3.png"
             ],
-            "link": "https://play.google.com/store/apps/details?id=co.seasoned.seasonedMessaging&hl=es_CO",
-            "description": "Developed some features, and manteind seasoned Application",
+            "link": "https://www.zceboxcolombia.com/home",
+            "description": "Developed entire ecommerce using react js and aws lambdas on python to backend",
             "type": "Freelance",
-            "client": "Let's Go",
-            "clientLink": "https://www.seasoned.co/"
+            "client": "ZCEBOX COLOMBIA",
+            "clientLink": "https://www.zceboxcolombia.com/home"
         },
         {
             "name": "GuascaFM",
@@ -115,15 +118,14 @@
                 "Redux"
             ],
             "images": [
-                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_1.png",
-                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_2.png",
-                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_3.png"
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/guasca/guasca_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/guasca/guasca_2.png"
             ],
-            "link": "https://play.google.com/store/apps/details?id=co.seasoned.seasonedMessaging&hl=es_CO",
+            "link": "https://play.google.com/store/apps/details?id=com.codigosimple.guasca889&hl=es_CO",
             "description": "Developed some features, and manteind seasoned Application",
             "type": "Freelance",
             "client": "Guasca F.M",
-            "clientLink": "https://play.google.com/store/apps/details?id=co.seasoned.seasonedMessaging&hl=es_CO"
+            "clientLink": "https://guascafm.com/"
         }
     ]
 }
