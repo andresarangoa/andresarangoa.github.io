@@ -1,10 +1,70 @@
 @use '../../../styles/variables' as vars;
 @use '../../../styles/mixins' as mix;
 
-.containerContacts{
-    display: grid;
-    grid-template-columns: 30% 70% ;
-    margin: 2rem;
-    padding-top: 8rem;
-    background-color: vars.$grayBanner;
+.contact-form {
+    display: flex;
+    margin-left: 10%;
+    min-height: 10vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+    justify-content: center;
+    z-index: 5;
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 50px;
+        max-width: 500px;
+        width: 100%;
+        
+        .form-group {
+            margin-bottom: 15px;
+
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                transition: border-color 0.3s;
+
+                &:focus {
+                    border-color: #007bff;
+                    outline: none;
+                }
+            }
+
+            textarea {
+                resize: vertical;
+                min-height: 100px;
+            }
+        }
+
+        .submit-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+
+            &:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+        }
+    }
 }
