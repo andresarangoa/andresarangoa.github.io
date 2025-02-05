@@ -1,0 +1,77 @@
+{
+    "skills": [
+      {
+        "category": "Android",
+        "items": [
+          { "name": "Android", "percentage": 90 },
+          { "name": "Coroutines", "percentage": 90 },
+          { "name": "Koin", "percentage": 100 },
+          { "name": "Dagger", "percentage": 70 },
+          { "name": "GraphQL", "percentage": 95 },
+          { "name": "JetpackCompose", "percentage": 85 },
+          { "name": "Groovy", "percentage": 40 },
+          { "name": "JUnit", "percentage": 80 },
+          { "name": "SnapshotTest", "percentage": 90 },
+          { "name": "Espresso tests", "percentage": 40 }
+        ]
+      },
+      {
+        "category": "Kotlin",
+        "items": [
+          { "name": "Kotlin", "percentage": 90 },
+          { "name": "KMM", "percentage": 70 }
+        ]
+      },
+      {
+        "category": "IOS",
+        "items": [
+          { "name": "IOS", "percentage": 20 },
+          { "name": "SwiftUI", "percentage": 20 }
+        ]
+      },
+      {
+        "category": "JavaScript",
+        "items": [
+          { "name": "JS", "percentage": 50 },
+          { "name": "React Native", "percentage": 40 },
+          { "name": "React", "percentage": 50 }
+        ]
+      },
+      {
+        "category": "Dart",
+        "items": [
+          { "name": "Dart", "percentage": 30 },
+          { "name": "Flutter", "percentage": 30 }
+        ]
+      },
+      {
+        "category": "Game Development",
+        "items": [
+          { "name": "Game Develop (General)", "percentage": 40 },
+          { "name": "Unity", "percentage": 10 },
+          { "name": "Unreal Engine 5", "percentage": 30 },
+          { "name": "C++", "percentage": 20 },
+          { "name": "C", "percentage": 20 },
+          { "name": "C#", "percentage": 20 },
+          { "name": "Blender", "percentage": 15 }
+        ]
+      },
+      {
+        "category": "Cloud & Containers",
+        "items": [
+          { "name": "GCP", "percentage": 10 },
+          { "name": "AWS", "percentage": 10 },
+          { "name": "Docker", "percentage": 5 },
+          { "name": "Kubernetes", "percentage": 5 }
+        ]
+      },
+      {
+        "category": "Leadership",
+        "items": [
+          { "name": "Team Leadership", "percentage": 70 },
+          { "name": "Team Work", "percentage": 70 }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,136 @@
+{
+    "outsourcingCompanies": [
+        {
+            "name": "ITEL Now",
+            "technologies": [
+                "Android",
+                "Kotlin",
+                "OpenCV",
+                "TensorFlow",
+                "Jetpack compose",
+                "MVP",
+                "Dagger",
+                "Unit Test"
+            ],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/itel/itel_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/itel/itel_2.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/itel/itel_3.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/itel/itel_4.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/itel/itel_5.png"
+            ],
+            "oc": "Blankfactor",
+            "ocLink": "https://blankfactor.com/",
+            "client": "ITEL Labs",
+            "link": "https://play.google.com/store/apps/details?id=com.itelinc.android.itelnow",
+            "description": "Developed an AI-driven Android application for efficient claims processing.",
+            "type": "Outsourcing Company",
+            "clientLink": "https://itelinc.com/"
+        },
+        {
+            "name": "NogginX",
+            "technologies": [
+                "Android",
+                "Kotlin",
+                "MVVM",
+                "Clean Architecture",
+                "Jetpack compose",
+                "Koin"
+            ],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/paramount/noggin_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/paramount/noggin_2.png"
+            ],
+            "oc": "Globant",
+            "ocLink": "https://www.globant.com/es",
+            "client": "Paramount",
+            "description": "Developed some features, and manteined nogginx Application",
+            "type": "Outsourcing Company",
+            "clientLink": "https://www.paramount.com/"
+        },
+        {
+            "name": "Seasoned",
+            "technologies": [
+                "Android",
+                "Kotlin",
+                "MVVM",
+                "Clean Architecture",
+                "GraphQL",
+                "Jetpack compose",
+                "Koin"
+            ],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_2.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/seasoned/seasoned_3.png"
+            ],
+            "link": "https://play.google.com/store/apps/details?id=co.seasoned.seasonedMessaging&hl=es_CO",
+            "description": "Developed some features, and manteind seasoned Application",
+            "oc": "Globant",
+            "ocLink": "https://www.globant.com/es",
+            "type": "Outsourcing Company",
+            "client": "Seasoned",
+            "clientLink": "https://www.seasoned.co/"
+        }
+    ],
+    "ownProjects": [
+        {
+            "name": "React Calendar Library",
+            "technologies": [
+                "React",
+                "Javascript",
+                "SASS"
+            ],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/calendar_library/calendar_library_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/calendar_library/calendar_library_2.png"
+            ],
+            "link": "https://www.npmjs.com/package/@farango/calendar_library",
+            "description": "The Event Calendar is a simple and responsive React component that displays a monthly calendar with support for events. This component is built with React and SCSS and can be easily integrated into your React applications.",
+            "type": "Personal"
+        }
+    ],
+    "freelanceProjects": [
+        {
+            "name": "ZCEBOXCOLOMBIA",
+            "technologies": [
+                "React",
+                "Javascript",
+                "TypeScript",
+                "Redux",
+                "AWS",
+                "Python",
+                "SASS",
+                "Clean Architecture"
+            ],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_2.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_3.png"
+            ],
+            "link": "https://www.zceboxcolombia.com/home",
+            "description": "Developed entire ecommerce using react js and aws lambdas on python to backend",
+            "type": "Freelance",
+            "client": "ZCEBOX COLOMBIA",
+            "clientLink": "https://www.zceboxcolombia.com/home"
+        },
+        {
+            "name": "GuascaFM",
+            "technologies": [
+                "Android",
+                "IOS",
+                "React Native",
+                "Redux"
+            ],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/guascafm/guasca_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/guascafm/guasca_2.png"
+            ],
+            "link": "https://play.google.com/store/apps/details?id=com.codigosimple.guasca889&hl=es_CO",
+            "description": "Developed some features, and manteind seasoned Application",
+            "type": "Freelance",
+            "client": "Guasca F.M",
+            "clientLink": "https://guascafm.com/"
+        }
+    ]
+}
