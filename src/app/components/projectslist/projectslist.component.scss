@@ -1,117 +1,193 @@
-$border-color: #ccc;
-$border-radius: 8px;
-$padding: 16px;
-$margin: 2rem;
-$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-$text-color: #333;
-$link-color: #007bff;
-$link-hover-decoration: underline;
+@use '../../../styles/variables' as vars;
 @use '../../../styles/mixins' as mix;
+@use 'sass:color';
+@use 'sass:math';
+
+// Color variables based on mockup
+$dark-bg: #121212;
+$card-bg: #2A2A2A;
+$card-inner-bg: #2A2A2A;
+$accent-blue: #5271FF;
+$text-white: #FFFFFF;
+$text-light: #EEEEEE;
+$text-dark: #EEEEEE;  // Changed from default dark color to light color for dark backgrounds
+$card-radius: 8px;
+$margin: 40px;
+$padding: 30px;
+
 .container__project__card {
-    margin: $margin;
-    margin-top: $margin * 2;
-    color: #eeeeee; // Darker text color for better readability
+  margin-bottom: $margin;
+  
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: $text-white;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .accent-line {
+    width: 80px;
+    height: 4px;
+    background-color: $accent-blue;
+    margin-bottom: 30px;
+  }
+}
 
-    &__inner {
-        margin: $margin;
-        background-color: #ffffff; // White background for the card
-        border: 1px solid $border-color;
-        border-radius: $border-radius;
-        padding: $padding;
+.project-card {
+  width: 90%;
+  min-height: 200px;
+  background-color: $card-inner-bg;
+  border-radius: $card-radius;
+  display: flex;
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  
+  .project-screenshot {
+    flex: 0 0 300px;
+    background-color: $card-inner-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .project-info {
+    flex: 1;
+    padding: $padding;
+    display: flex;
+    flex-direction: column;
+    
+    .project-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: $text-white;  // Changed from #333 to white for better contrast
+      margin-bottom: 12px;
+      font-family: Arial, sans-serif;
+    }
+    
+    .project-description {
+      font-size: 16px;
+      line-height: 1.5;
+      color: $text-light;  // Changed from #555 to light color
+      margin-bottom: 20px;
+    }
+    
+    .technologies {
+      margin-bottom: 20px;
+      
+      .technologies-label {
+        font-size: 16px;
+        font-weight: bold;
+        color: $text-white;  // Changed from #333 to white
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      
+      .tech-tags {
         display: flex;
-        align-items: flex-start;
-        box-shadow: 0 4px 8px rgb(0, 0, 0); // Subtle shadow effect
-
-
-        .image-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-right: 16px;
-            justify-content: center;
-            flex: 0.2;
-
-            .project-image {
-                max-width: 150px;
-                height: auto;
-                align-self: center;
-                border-radius: $border-radius;
-            }
+        flex-wrap: wrap;
+        gap: 10px;
+        
+        .tech-tag {
+          display: inline-block;
+          background-color: #3A3A3A;  // Darker background for tags
+          color: $text-light;  // Light text for better contrast
+          padding: 6px 14px;
+          border-radius: 4px;
+          font-size: 14px;
+          border: 1px solid #505050;  // Darker border
         }
-
-        &__project__details {
-            flex: 1;
-
-            &__subtitle {
-                font-weight: bold;
-            }
-
-            h2 {
-                color: #0f0f0f; // Darker heading color
-                margin: 12px 0;
-            }
-
-            h3 {
-                color: #0f0f0f; // Darker heading color
-                margin: 12px 0;
-            }
-
-            p {
-                color: $text-color;
-            }
-
-            a {
-                display: inline-block;
-                margin-top: 8px;
-                color: $link-color;
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: $link-hover-decoration;
-                }
-            }
-        }
+      }
     }
-
-    @include mix.respond-to(sm) {
-        margin: $margin / 2;
-        margin-top: $margin;
-        color: #333333;
-
-        &__inner {
-            flex-direction: column;
-            align-items: center;
-            padding: $padding / 2;
-
-            .image-container {
-                margin-right: 0;
-                margin-bottom: 16px;
-                flex: none;
-
-                .project-image {
-                    max-width: 100%;
-                    width: 200px;
-                }
-            }
-
-            &__project__details {
-                text-align: center;
-
-                h2,
-                h3 {
-                    font-size: 1.2rem;
-                    margin: 8px 0;
-                }
-
-                p {
-                    font-size: 0.9rem;
-                }
-
-                a {
-                    margin-top: 12px;
-                }
-            }
+    
+    .project-type, .outsourcing-company, .client-info {
+      margin-bottom: 12px;
+      color: $text-light;  // Changed from #555 to light color
+      font-size: 15px;
+      
+      .info-label {
+        font-weight: bold;
+        color: $text-white;  // Changed from #333 to white
+      }
+      
+      a {
+        color: lighten($accent-blue, 15%);  // Lightened blue for better visibility
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: underline;
         }
+      }
     }
-
+    
+    .project-links {
+      margin-top: auto;
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      
+      .link-btn, .view-project-btn {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 10px 24px;
+        border-radius: 4px;
+        transition: all 0.2s;
+      }
+      
+      .link-btn {
+        color: lighten($accent-blue, 15%);  // Lightened blue
+        background-color: transparent;
+        border: 1px solid lighten($accent-blue, 10%);  // Lightened border
+        
+        &:hover {
+          background-color: rgba(82, 113, 255, 0.2);  // More visible hover state
+        }
+      }
+      
+      .view-project-btn {
+        background-color: $accent-blue;
+        color: white;
+        
+        &:hover {
+          background-color: lighten($accent-blue, 10%);  // Lighter on hover for visibility
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    flex-direction: column;
+    
+    .project-screenshot {
+      width: 100%;
+      height: 220px;
+      flex: none;
+      padding: 15px;
+    }
+    
+    .project-info {
+      width: 100%;
+      padding: math.div($padding, 2);
+      
+      .project-title {
+        font-size: 22px;
+      }
+      
+      .project-links {
+        flex-direction: column;
+        gap: 10px;
+        
+        .link-btn, .view-project-btn {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
 }

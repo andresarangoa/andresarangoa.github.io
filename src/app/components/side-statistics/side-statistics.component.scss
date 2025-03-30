@@ -1,98 +1,118 @@
-@use '../../../styles/variables' as vars;
-@use '../../../styles/mixins' as mix;
+// side-statistics.component.scss
+// Color variables based on mockup
+$dark-bg: #121212;
+$card-bg: #2A2A2A;
+$accent-blue: #5271FF;
+$text-white: #FFFFFF;
+$text-light: #DDDDDD;
+$text-muted: #AAAAAA;
+$skill-bar-bg: #333333;
+$card-radius: 10px;
 
-.statistics-container {
-  max-width: 600px; // or any container width
-  margin: 0 auto; // center the container
-  padding: 1rem;
-  background-color: vars.$grayBanner;
-  color: #ccc;
-
-  .category {
-    margin-bottom: 2rem;
-
+.skills-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  color: $text-white;
+  
+  .skills-header {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    
     h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-family: Arial, sans-serif;
+      letter-spacing: 1px;
     }
-
-    .skill-list {
+    
+    .accent-line {
+      width: 80px;
+      height: 5px;
+      background-color: $accent-blue;
+      margin: 0;
+    }
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .skill-category {
+    .category-card {
+      background-color: $card-bg;
+      border-radius: $card-radius;
+      padding: 1.25rem;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-    }
-
-    .skill-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: #33333b;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      color: #fff;
-
-      .skill-label {
-        font-size: 1rem;
-        font-weight: 500;
+      
+      h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+        font-family: Arial, sans-serif;
       }
-
-      .circular-progress {
-        width: 60px;
-        height: 60px;
-
-        .circular-chart {
-          display: block;
-          margin: 0 auto;
-          max-width: 100%;
-          max-height: 100%;
-
-          .circle-bg {
-            fill: none;
-            stroke: #eee;
-            stroke-width: 3.8;
-          }
-
-          .circle {
-            fill: none;
-            stroke-width: 2.8;
-            stroke-linecap: round;
-            stroke: #ff4f4f; // main color for your percentage ring
-          }
-
-          .percentage {
-            fill: #fff; // text color
-            font-size: 0.5rem;
-            text-anchor: middle;
-          }
-        }
+      
+      .accent-mini-line {
+        width: 40px;
+        height: 3px;
+        background-color: $accent-blue;
+        margin-bottom: 1rem;
       }
     }
   }
-
-  @include mix.respond-to(sm) {
-    max-width: 100%;
-    padding: 0.5rem;
-
-    .category {
-      margin-bottom: 1rem;
-
-      h2 {
-        font-size: 1.25rem;
-        margin-bottom: 0.5rem;
-        padding-bottom: 0.25rem;
-      }
-
-      .skill-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-
-        .circular-progress {
-          width: 50px;
-          height: 50px;
+  
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .skill-item {
+    .skill-label {
+      font-size: 0.9rem;
+      color: $text-light;
+      margin-bottom: 0.25rem;
+      font-family: Arial, sans-serif;
+    }
+    
+    .skill-bar-container {
+      display: flex;
+      align-items: center;
+      
+      .skill-bar-bg {
+        flex: 1;
+        height: 8px;
+        background-color: $skill-bar-bg;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-right: 0.5rem;
+        
+        .skill-bar-fill {
+          height: 100%;
+          background-color: $accent-blue;
+          border-radius: 4px;
         }
+      }
+      
+      .skill-percentage {
+        font-size: 0.75rem;
+        color: $text-white;
+        min-width: 30px;
+        text-align: right;
       }
     }
   }

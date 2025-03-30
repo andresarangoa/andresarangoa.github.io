@@ -1,28 +1,57 @@
 @use '../../../styles/variables' as vars;
 @use '../../../styles/mixins' as mix;
+@use 'sass:color';
 
-.containerP{
-    display: grid;
-    grid-template-columns: 30% 70% ;
-    margin: 2rem;
-    padding-top: 8rem;
-    background-color: vars.$grayBanner;
-}
+// Background color variables based on mockup
+$dark-bg: #1A1A1A;
+$card-bg: #2A2A2A;
+$accent-blue: #5271FF;
+$text-white: #FFFFFF;
 
-@media (max-width: 768px) {
-   
-    .containerP {
-    margin: 0.1rem;
-      grid-template-columns: 1fr; /* Single column */
-      grid-template-rows: auto auto; /* Two rows */
-    }
+.containerP {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $dark-bg;
   
-    .containerP > :first-child {
-      grid-row: 2; /* Place the first child in the second row */
+  // Projects section takes full width in the mockup
+  app-projectslist {
+    width: 100%;
+    padding: 30px 100px;
+    @media (max-width: 992px) {
+      padding: 0 50px;
     }
-  
-    .containerP > :nth-child(2) {
-      grid-row: 1; /* Place the second child in the first row */
+    @media (max-width: 768px) {
+      padding: 0 20px;
     }
   }
   
+  // Side statistics - this is the skills section
+  app-side-statistics {
+    width: 100%;
+    padding: 0 100px;
+    
+    // Remove any internal padding from the skills component itself
+    ::ng-deep .skills-container {
+      padding: 0;
+      margin: 0;
+    }
+    
+    @media (max-width: 992px) {
+      padding: 0 50px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+  }
+}
+
+// Media queries for responsive design
+@media (max-width: 768px) {
+  .containerP {
+    flex-direction: column;
+  }
+}
