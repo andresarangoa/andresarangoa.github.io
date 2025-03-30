@@ -1,24 +1,45 @@
+<!-- projectslist.component.html -->
 <div class="container__project__card" *ngFor="let category of projectCategories | keyvalue: customSort">
-    <h2>{{ formatCategoryName(category.key) }}</h2>
-    <div *ngFor="let project of category.value" class="container__project__card__inner">
-        <div class="image-container">
-            <!-- Assuming you have an <app-image-carousel> component to display images -->
+    <h2 class="section-title">{{ formatCategoryName(category.key) }}</h2>
+    <div class="accent-line"></div>
+    <div *ngFor="let project of category.value" class="project-card">
+        <!-- Project screenshot -->
+        <div class="project-screenshot">
             <app-image-carousel [images]="project.images"></app-image-carousel>
         </div>
-        <div class="container__project__card__inner__project__details">
-            <h3>{{ project.name }}</h3>
-            <p>{{ project.description }}</p>
-            <p><span class="container__project__card__inner__project__details__subtitle">Technologies:</span> {{
-                project.technologies.join(', ') }}</p>
-            <p><span class="container__project__card__inner__project__details__subtitle">Type:</span> {{ project.type }}
-            </p>
-            <p><span *ngIf="project.oc" class="container__project__card__inner__project__details__subtitle">Outsourcing
-                    Company: </span> <a [href]="project.clientLink" target="_blank">{{ project.oc }}</a> </p>
-            <p><span *ngIf="project.client" class="container__project__card__inner__project__details__subtitle">Final
-                    client: </span> <a [href]="project.clientLink" target="_blank">{{ project.client }}</a> </p>
-            <a [href]="project.link" target="_blank">App Store Link</a>
-            <div *ngIf="project.clientLink">
-                <a [href]="project.clientLink" target="_blank">Client Website</a>
+        <!-- Project info -->
+        <div class="project-info">
+            <h3 class="project-title">{{ project.name }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+
+            <!-- Technologies used -->
+            <div class="technologies">
+                <span class="technologies-label">Technologies:</span>
+                <div class="tech-tags">
+                    <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
+                </div>
+            </div>
+
+            <!-- Project type if available -->
+            <div *ngIf="project.type" class="project-type">
+                <span class="info-label">Type:</span> {{ project.type }}
+            </div>
+
+            <!-- Outsourcing company if available -->
+            <div *ngIf="project.oc" class="outsourcing-company">
+                <span class="info-label">Outsourcing Company:</span> <a [href]="project.ocLink || '#'"
+                    target="_blank">{{ project.oc }}</a>
+            </div>
+
+            <!-- Final client if available -->
+            <div *ngIf="project.client" class="client-info">
+                <span class="info-label">Final client:</span> <a [href]="project.clientLink || '#'" target="_blank">{{
+                    project.client }}</a>
+            </div>
+
+            <!-- Links -->
+            <div class="project-links">
+                <a *ngIf="project.link" [href]="project.link" target="_blank" class="view-project-btn">View Project</a>
             </div>
         </div>
     </div>

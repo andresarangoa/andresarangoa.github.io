@@ -1,292 +1,297 @@
+// banner.component.scss
 @use '../../../styles/variables' as vars;
 @use '../../../styles/mixins' as mix;
 @import "https://fonts.googleapis.com/css2?family=Bungee&display=swap";
 
+// New color variables based on mockup
+$dark-bg: #1A1A1A;
+$header-bg: #232323;
+$card-bg: #2A2A2A;
+$accent-blue: #5271FF;
+$text-white: #FFFFFF;
+$text-light: #CCCCCC;
+$text-muted: #AAAAAA;
+
 .banner {
-    background-color: vars.$grayBanner;
-    display: grid;
-    width: 100%;
-    max-height: 32rem;
-    grid-template-columns: repeat(2, 1fr);
-
-    &__left {
-        display: grid;
-
-        grid-template-rows: 80% 20%;
-        padding-left: 10rem;
-        // background-color: red;
+  background-color: $header-bg;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+  
+  @media (max-width: 992px) {
+    flex-direction: column;
+    min-height: auto;
+    padding: 2rem 0;
+  }
+  
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 2rem;
+    
+    @media (max-width: 992px) {
+      width: 100%;
+      padding: 2rem 1rem;
     }
-
-    &__right {
-
-
-
-        padding: 4rem;
-        display: grid;
-        grid-template-rows: 5% 65% 20%;
-
-        p {
-            font-size: 1.2rem;
-
-            margin-top: 3rem;
-            color: white;
-        }
-
-
-        &__social {
-            align-self: end;
-            /* push them to bottom of the row */
-            justify-self: end;
-            /* or 'end' if you want them on the right side */
-            display: flex;
-            gap: 1rem;
-            margin-right: 2rem;
-
-            a {
-                color: #fff;
-                font-size: 1.5rem;
-                text-decoration: none;
-
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
-        }
-
-        &__nav {
-            ul {
-                list-style: none;
-                display: flex;
-                /* places links side by side */
-                gap: 2rem;
-                /* space between items */
-            }
-
-            &__cv {
-
-                &--padding {
-                    background-color: #38010a;
-                    margin-left: 33%;
-                }
-
-                &--es,
-                &--en {
-                    display: flex;
-                    padding: 0.4rem;
-                    font-weight: bold;
-                    border-radius: 0.3rem;
-                    background-color: vars.$redBanner;
-
-                    &:hover {
-                        background-color:vars.$yellowBanner;
-                    }
-                }
-            }
-
-
-            li {
-                /* no special styles needed by default; but feel free to add if you want */
-            }
-
-            a {
-                /* White text */
-                color: #fff;
-                text-decoration: none;
-
-                /* Red underline (using border-bottom) */
-                border-bottom: 2px solid red;
-                padding-bottom: 0.2rem;
-
-                /* Optional: a hover effect */
-                transition: opacity 0.2s ease;
-
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
-        }
-
-    }
-
-    &__first {
-        padding-top: 0rem;
-
-        h1 {
-            font-size: 6rem;
-            /* Adjust title size */
-            font-family: 'Bungee', bold;
-            /* Decorative font */
-            color: white;
-            /* High contrast on dark background */
-            margin-bottom: 0px;
-            line-height: 1;
-        }
-
-        &__h1--right {
-            margin-left: 10rem;
-        }
-
-    }
-
-    &__second {
-        position: relative;
-        padding-top: 1rem;
+  }
+  
+  &__profile {
+    position: relative;
+    
+    &__image {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 5px solid $accent-blue;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $card-bg;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      
+      @media (max-width: 992px) {
+        width: 200px;
+        height: 200px;
+      }
+      
+      @media (max-width: 576px) {
+        width: 150px;
+        height: 150px;
+      }
+      
+      img {
+        width: 100%;
         height: 100%;
-
-        img {
-            box-shadow: 1rem 1.6rem 2rem #12151c;
-            border-radius: 50%;
-            width: 20rem;
-            /* Circular image */
-            min-width: 150px;
-            /* Adjust size of the image */
-            position: relative;
-            z-index: 2;
-            /* Ensures it layers correctly */
-        }
-
-        &__title--top,
-        &__title--bottom {
-            z-index: 4;
-            position: absolute;
-            left: 20%;
-            /* start horizontally at the center */
-            transform: translateX(-50%);
-            /* shift left by 50% of its own width to truly center */
-            color: #fff;
-            /* set text color so it’s visible over the image */
-            text-align: center;
-            padding: 0.5rem 1rem;
-            /* Optionally, add a background or shadow for better readability:
-             background-color: rgba(0, 0, 0, 0.5);
-             border-radius: 0.3rem;
-          */
-        }
-
-        &__title--top {
-            top: 52%;
-            font-size: 1.5rem;
-            background-color: vars.$redBanner;
-            /* 20% down from the top of the parent container */
-        }
-
-        &__title--bottom {
-            background-color: vars.$yellowBanner;
-            font-size: 1.5rem;
-            top: 60%;
-            margin-left: 6rem;
-            /* 30% down from the top => ~10% below the first heading */
-        }
+        object-fit: cover;
+      }
     }
+  }
+  
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 2rem 4rem;
+    
+    @media (max-width: 992px) {
+      width: 100%;
+      padding: 2rem;
+    }
+    
+    @media (max-width: 576px) {
+      padding: 1.5rem;
+    }
+  }
+  
+  &__content {
+    max-width: 600px;
+    
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+  
+  &__name {
+    font-size: 3.5rem;
+    font-family: 'Bungee', sans-serif;
+    color: $text-white;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    
+    @media (max-width: 992px) {
+      font-size: 2.5rem;
+    }
+    
+    @media (max-width: 576px) {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  
+  &__accent-line {
+    width: 150px;
+    height: 5px;
+    background-color: $accent-blue;
+    margin-bottom: 1.5rem;
+    
+    @media (max-width: 576px) {
+      margin: 0 auto 1.5rem;
+    }
+  }
+  
+  &__title {
+    font-size: 1.5rem;
+    color: $text-light;
+    margin-bottom: 2rem;
+    font-weight: normal;
+    
+    @media (max-width: 576px) {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+  
+  &__description {
+    margin-bottom: 2.5rem;
+    
+    p {
+      color: $text-muted;
+      font-size: 1.125rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      
+      @media (max-width: 576px) {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  }
+  
+  &__social {
+    display: flex;
+    gap: 1.25rem;
+    
+    @media (max-width: 576px) {
+      justify-content: center;
+    }
+    
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #333333;
+      border-radius: 10px;
+      color: $text-white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: $accent-blue;
+        transform: translateY(-3px);
+      }
+    }
+  }
 }
 
+// Navigation styling
+.main-nav {
+  background-color: $card-bg;
+  width: 100%;
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    
+    @media (max-width: 992px) {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .nav-item {
+      &.active {
+        background-color: $accent-blue;
+        
+        a {
+          border-bottom: none;
+        }
+      }
+      
+      a {
+        display: block;
+        padding: 1.5rem 1.25rem;
+        color: $text-white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border-bottom: none;
+        
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  
+  .cv-buttons {
+    display: flex;
+    gap: 1rem;
+    
+    @media (max-width: 992px) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    @media (max-width: 576px) {
+      flex-direction: column;
+      width: 100%;
+      gap: 0.5rem;
+    }
+    
+    .cv-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: $accent-blue;
+      color: $text-white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      text-align: center;
+      
+      &:hover {
+        background-color: darken($accent-blue, 10%);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
 
+// Hamburger menu for mobile
 @media (max-width: 768px) {
-    .banner {
-        /* Switch to 1-column layout */
-        display: block;
-        max-height: 70rem;
-        /* so it can grow if needed */
-        /* less margin on small screens */
-        padding: 0;
-
-        /* Remove or simplify columns for smaller screens */
-        grid-template-columns: none;
-        /* or remove grid altogether */
+  .main-nav {
+    position: relative;
+    
+    .nav-container {
+      width: 100%;
     }
-
-    /* Adjust the "left" part to stack naturally */
-    .banner__left {
-        display: block;
-        padding-left: 1rem;
-        /* reduce padding to fit mobile */
-        margin-bottom: 2rem;
-        /* add space below */
-        grid-template-rows: auto;
-        /* not strictly necessary, but reduces complexity */
-    }
-
-    /* Adjust the "first" section’s title sizes for mobile */
-    .banner__first {
+    
+    .nav-links {
+      width: 100%;
+      
+      .nav-item {
+        width: 50%;
         text-align: center;
-
-        h1 {
-            font-size: 3rem;
-            margin-left: 0;
-            /* remove any left margin */
+        
+        a {
+          padding: 1rem 0.5rem;
         }
+      }
     }
-
-    .banner__first__h1--right {
-        margin-left: 0;
-        /* remove big left margin for phone */
-    }
-
-    /* Adjust the right side */
-    .banner__right {
-        padding: 1rem;
-        /* reduce padding on mobile */
-        display: block;
-        /* simpler layout, no grid needed here */
-        text-align: center;
-
-        /* optional if you want to center text on phone */
-        p {
-            font-size: 1rem;
-            /* slightly smaller text on phone */
-        }
-
-        &__nav {
-            margin-top: 2rem;
-
-            ul {
-                justify-content: center;
-                /* center nav items if desired */
-                gap: 1rem;
-                /* reduce gap */
-            }
-
-
-        }
-    }
-
-    /* Adjust the second image section */
-    .banner__second {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* centers the image (and other items) horizontally */
-        padding-top: 2rem;
-        height: auto;
-        margin: 0 auto;
-        position: relative;
-
-        img {
-            width: 12rem;
-            /* smaller image on phone */
-            box-shadow: 0.5rem 0.8rem 1rem #12151c;
-        }
-
-        &__title--top,
-        &__title--bottom {
-            /* Move them so they are more central on smaller screens */
-            left: 50%;
-            /* center horizontally */
-            transform: translateX(-50%);
-            font-size: 1rem;
-            /* smaller text for phone */
-            padding: 0.3rem 0.6rem;
-            /* less padding */
-        }
-
-        &__title--top {
-            top: 80%;
-        }
-
-        &__title--bottom {
-            top: 95%;
-            margin-left: 0;
-            /* remove extra margin */
-        }
-    }
+  }
 }

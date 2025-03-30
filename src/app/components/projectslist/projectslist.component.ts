@@ -1,6 +1,7 @@
+// projectslist.component.ts
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { CommonModule ,KeyValue} from '@angular/common'; 
+import { CommonModule, KeyValue } from '@angular/common';
 import { ImageCarouselComponent } from '../image-carousel/image-carousel.component';
 import { AngularUrlPreviewModule } from 'angular-url-preview';
 
@@ -24,9 +25,9 @@ interface ProjectCategories {
   [key: string]: Project[]; // Index signature
 }
 
-
 @Component({
   selector: 'app-projectslist',
+  standalone: true,
   imports: [CommonModule, ImageCarouselComponent],
   templateUrl: './projectslist.component.html',
   styleUrl: './projectslist.component.scss'
@@ -37,20 +38,30 @@ export class ProjectslistComponent implements OnInit {
     ownProjects: [],
     freelanceProjects: []
   };
-
+  
+  // Add this flag to track data loading
+  dataLoaded = false;
+  
   constructor(private http: HttpClient) {}
-
+  
   ngOnInit(): void {
     this.http.get<ProjectCategories>('assets/projects.json').subscribe(
       (data) => {
         this.projectCategories = data;
+        
+        // Add a small delay to ensure DOM is ready
+        setTimeout(() => {
+          this.dataLoaded = true;
+          console.log('Project data loaded, ready to initialize carousels');
+        }, 200);
       },
       (error) => {
         console.error('Error fetching projects:', error);
+        this.dataLoaded = true; // Set to true even on error to show error state
       }
     );
   }
-
+  
   formatCategoryName(key: string): string {
     switch (key) {
       case 'outsourcingCompanies':
@@ -63,7 +74,7 @@ export class ProjectslistComponent implements OnInit {
         return key;
     }
   }
-
+  
   customSort = (a: KeyValue<string, Project[]>, b: KeyValue<string, Project[]>): number => {
     const order = ['outsourcingCompanies', 'freelanceProjects', 'ownProjects'];
     return order.indexOf(a.key) - order.indexOf(b.key);
