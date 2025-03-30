@@ -31,19 +31,25 @@ $text-white: #FFFFFF;
   
   // Side statistics - this is the skills section
   app-side-statistics {
-    width: 100%;
+    width: calc(100% - 200px); /* Subtract the total padding (left + right) */
     padding: 0 100px;
+    display: block;
+    margin: 0 auto; /* Center the component */
     
     // Remove any internal padding from the skills component itself
     ::ng-deep .skills-container {
       padding: 0;
       margin: 0;
+      width: 100%;
     }
     
     @media (max-width: 992px) {
+      width: calc(100% - 100px); /* Adjust for reduced padding */
       padding: 0 50px;
     }
+    
     @media (max-width: 768px) {
+      width: calc(100% - 40px); /* Adjust for reduced padding */
       padding: 0 20px;
     }
   }
