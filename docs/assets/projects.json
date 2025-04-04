@@ -124,7 +124,7 @@
             "images": [
                 "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_1.png",
                 "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_2.png",
-                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_3.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_3.png"
             ],
             "link": "https://www.zceboxcolombia.com/home",
             "description": "Developed entire ecommerce using react js and aws lambdas on python to backend",
