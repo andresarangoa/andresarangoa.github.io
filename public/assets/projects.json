@@ -97,7 +97,12 @@
                 "Android",
                 "iOS"
             ],
-            "images": [],
+            "images": [
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/flow_components/flow_component_1.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/flow_components/flow_component_2.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/flow_components/flow_component_3.png",
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/flow_components/flow_component_4.png"
+            ],
             "link": "https://github.com/andresarangoa/flow-components",
             "description": "A cross-platform design system library built with Kotlin Multiplatform, enabling consistent UI components across Android and iOS applications.",
             "type": "Personal"
@@ -119,7 +124,7 @@
             "images": [
                 "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_1.png",
                 "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_2.png",
-                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_3.png"
+                "https://raw.githubusercontent.com/andresarangoa/andresarangoa.github.io/master/public/assets/zcebox/zcebox_3.png",
             ],
             "link": "https://www.zceboxcolombia.com/home",
             "description": "Developed entire ecommerce using react js and aws lambdas on python to backend",
