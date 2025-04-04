@@ -88,6 +88,19 @@
             "link": "https://www.npmjs.com/package/@farango/calendar_library",
             "description": "The Event Calendar is a simple and responsive React component that displays a monthly calendar with support for events. This component is built with React and SCSS and can be easily integrated into your React applications.",
             "type": "Personal"
+        },
+        {
+            "name": "Flow Components",
+            "technologies": [
+                "Kotlin",
+                "Kotlin Multiplatform",
+                "Android",
+                "iOS"
+            ],
+            "images": [],
+            "link": "https://github.com/andresarangoa/flow-components",
+            "description": "A cross-platform design system library built with Kotlin Multiplatform, enabling consistent UI components across Android and iOS applications.",
+            "type": "Personal"
         }
     ],
     "freelanceProjects": [
